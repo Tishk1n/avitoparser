@@ -66,7 +66,7 @@ async def main_menu(message: types.Message):
 async def bot_get_search(callback_data: types.CallbackQuery):
     search_id = callback_data.data.removeprefix('search=')
     search = await get_user_search_db(search_id)
-    deleteb = InlineKeyboardButton('Удалить', callback_data=f'delete={search_id}')
+    deleteb = InlineKeyboardButton('Удалить', callback_data=f'delete={search.id}')
     delete_keyboard = InlineKeyboardMarkup(resize_keyboard=True).add(deleteb)
     await bot.send_message(callback_data.from_user.id,
                            f'Название запроса: {search.name}\n\nСсылка на запрос: {search.search}',
