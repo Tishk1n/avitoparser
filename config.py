@@ -5,8 +5,8 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 temp_folder = os.getcwd() + '\\tmp'
 
-TOKEN = '5218712793:AAE6d5BPRVF57t-E78lJlU0TE-oceicVdbY'
-MANAGER_ID = 7757078362
+TOKEN = '5974426398:AAHAdzVgk_j8UDc8eFsDF8DdedLeyPyhJPg'
+MANAGER_ID = 5484667168
 
 db = MemoryStorage()
 bot = Bot(token=TOKEN)
